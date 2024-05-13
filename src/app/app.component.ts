@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { BannerCutOutComponent } from "./banner-cut-out/banner-cut-out.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss',
+    imports: [RouterOutlet, BannerCutOutComponent]
 })
 export class AppComponent {
-  title = 'banner-cut-out';
+  imageUrl = 'assets/back-1.jpg';
+  title = 'Angular Challenge -- banner cut out';
 }
